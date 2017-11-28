@@ -1,4 +1,26 @@
 * {
-  border: 1px solid; }
+  border: 1px solid black; }
+
+body {
+  padding: 5%; }
+
+.flex-container1 {
+  color: white;
+  width: 100%;
+  background-color: #1ec1fd;
+  justify-content: space-around; }
+  .flex-container1 .nav-bar {
+    display: flex;
+    justify-content: center; }
+    .flex-container1 .nav-bar table {
+      width: 100%; }
+    .flex-container1 .nav-bar h4 {
+      font-size: 15px; }
+    .flex-container1 .nav-bar h5 {
+      font-size: 10px; }
+    .flex-container1 .nav-bar .space-head {
+      width: 30%; }
+  .flex-container1 .Head {
+    align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
