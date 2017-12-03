@@ -10,8 +10,8 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
-}
+  line-height: 1.4; }
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -23,13 +23,12 @@ html {
  */
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
+
 /*
  * A better looking default horizontal rule
  */
@@ -39,8 +38,8 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -52,22 +51,22 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
+
 /*
  * Remove default fieldset styles.
  */
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
+
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical;
-}
+  resize: vertical; }
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -75,134 +74,99 @@ textarea {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
-}
+  padding: 0.2em 0; }
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 * {
-  font-family: serif;
-}
+  font-family: serif; }
 
 .Main {
   width: 100%;
   height: 600px;
-  background-color: #1ec1fd;
-}
+  background-color: #1ec1fd; }
 
 header {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-
-  div {
+  width: 100%; }
+  header div {
     display: inline-flex;
     width: 100%;
-    justify-content: flex-start;
-
-    .title {
+    justify-content: flex-start; }
+    header div .title {
       margin: 3%;
-      align-self: center;
-
-      h4 {
-        font-size: 20px;
-      }
-    }
-
-    nav {
+      align-self: center; }
+      header div .title h4 {
+        font-size: 20px; }
+    header div nav {
       width: 100%;
       display: flex;
-      justify-content: space-around;
-
-      ul {
+      justify-content: space-around; }
+      header div nav ul {
         margin: 0;
         padding: 0;
         overflow: hidden;
         display: flex;
         justify-content: space-around;
-        width: 80%;
-
-        li {
+        width: 80%; }
+        header div nav ul li {
           display: flex;
           list-style-type: none;
           text-align: center;
           width: 100%;
           justify-content: space-around;
-          align-items: center;
-        }
-      }
-    }
-  }
-}
+          align-items: center; }
 
 .container1,
 header,
 nav {
   background-color: #1ec1fd;
-  color: white;
-}
+  color: white; }
 
 .container1 {
   display: flex;
   width: 100%;
-  height: 400px;
-}
+  height: 400px; }
 
 .Head {
   justify-content: center;
   align-items: center;
-  padding-left: 40px;
-
-  h1 {
+  padding-left: 40px; }
+  .Head h1 {
     font-size: 4em;
-    margin-bottom: -20px;
-  }
-
-  h2 {
-    font-weight: lighter;
-  }
-}
+    margin-bottom: -20px; }
+  .Head h2 {
+    font-weight: lighter; }
 
 .container2 {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  flex-direction: column;
-
-  div.Head2 {
+  flex-direction: column; }
+  .container2 div.Head2 {
     width: 100%;
-    text-align: center;
-
-    h4 {
+    text-align: center; }
+    .container2 div.Head2 h4 {
       font-size: 40px;
       font-weight: lighter;
-      margin-bottom: -39px;
-    }
-
-    h5 {
+      margin-bottom: -39px; }
+    .container2 div.Head2 h5 {
       font-size: 23px;
-      font-weight: initial;
-    }
-  }
-
-  div.atout {
+      font-weight: initial; }
+  .container2 div.atout {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 50px;
-
-    .asset-item {
+    margin-top: 50px; }
+    .container2 div.atout .asset-item {
       width: 370px;
-      text-align: center;
-
-      h5 {
+      text-align: center; }
+      .container2 div.atout .asset-item h5 {
         font-size: 17px;
-        font-weight: 100;
-      }
-    }
-  }
-}
+        font-weight: 100; }
 
 div.atout-div {
   align-items: center;
@@ -210,147 +174,107 @@ div.atout-div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-bottom: 60px;
-}
+  padding-bottom: 60px; }
 
 .icone {
   color: #16befd;
-  font-size: 3em;
-}
+  font-size: 3em; }
 
 .container3 {
   background-color: #e9e9e9;
   display: flex;
   width: 100%;
-  justify-content: space-around;
-
-  .annonce {
+  justify-content: space-around; }
+  .container3 .annonce {
     margin: 70px;
     width: 450px;
-    margin-left: -100px;
-
-    h3 {
+    margin-left: -100px; }
+    .container3 .annonce h3 {
       font-size: 30px;
-      margin-bottom: -23px;
-    }
-
-    h4 {
-      font-size: 20px;
-    }
-
-    p {
-      width: 455px;
-    }
-  }
-
-  .illustration {
+      margin-bottom: -23px; }
+    .container3 .annonce h4 {
+      font-size: 20px; }
+    .container3 .annonce p {
+      width: 455px; }
+  .container3 .illustration {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-
-    .icon-astro {
+    width: 300px; }
+    .container3 .illustration .icon-astro {
       align-items: center;
       display: flex;
       font-size: 10em;
       width: 100%;
       justify-content: center;
-      height: 100%;
-    }
-  }
-}
+      height: 100%; }
 
 .container4 {
   display: flex;
   background-color: white;
   justify-content: center;
-  flex-direction: column;
-
-  .title3 {
+  flex-direction: column; }
+  .container4 .title3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 3%;
-    text-align: center;
-
-    h4 {
+    text-align: center; }
+    .container4 .title3 h4 {
       font-size: 2em;
-      font-weight: 300;
-    }
-
-    h5 {
+      font-weight: 300; }
+    .container4 .title3 h5 {
       font-size: 1.2em;
-      margin-top: -45px;
-    }
-  }
-}
+      margin-top: -45px; }
 
 .table-skill {
   display: flex;
-  justify-content: center;
-
-  table {
+  justify-content: center; }
+  .table-skill table {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-
-    tbody {
-      width: 1300px;
-
-      tr {
+    justify-content: space-around; }
+    .table-skill table tbody {
+      width: 1300px; }
+      .table-skill table tbody tr {
         display: flex;
-        justify-content: space-between;
-
-        td {
+        justify-content: space-between; }
+        .table-skill table tbody tr td {
           width: 100%;
-          text-align: center;
-
-          .Short-Des {
+          text-align: center; }
+          .table-skill table tbody tr td .Short-Des {
             font-size: 1.3em;
-            margin-top: -30px;
-          }
-
-          .icone {
-            font-size: 2em;
-          }
-        }
-      }
-    }
-  }
-}
+            margin-top: -30px; }
+          .table-skill table tbody tr td .icone {
+            font-size: 2em; }
 
 .container5 {
-  background: rgba(0,192,247,1);
+  background: #00c0f7;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
-
-  h3 {
+  height: 200px; }
+  .container5 h3 {
     font-size: 2em;
-    margin-left: 40px;
-  }
-
-  a {
+    margin-left: 40px; }
+  .container5 a {
     padding: 20px 40px;
     color: white;
     border: 2px white solid;
     border-radius: 55px;
     text-decoration: none;
     font-weight: 600;
-    margin-right: 40px;
-  }
-}
+    margin-right: 40px; }
 
 footer {
-  background: rgba(0,182,233,1);
+  background: #00b6e9;
   color: white;
   text-align: center;
   padding: 5vh;
   font-size: 0.7em;
-  font-weight: 700;
-}
+  font-weight: 700; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -358,8 +282,8 @@ footer {
  * Hide visually and from screen readers
  */
 .hidden {
-  display: none !important;
-}
+  display: none !important; }
+
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -380,8 +304,8 @@ footer {
   position: absolute;
   width: 1px;
   white-space: nowrap;
-  /* 1 */
-}
+  /* 1 */ }
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
@@ -397,14 +321,14 @@ footer {
   overflow: visible;
   position: static;
   width: auto;
-  white-space: inherit;
-}
+  white-space: inherit; }
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }
+
 /*
  * Clearfix: contain floats
  *
@@ -421,23 +345,20 @@ footer {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */
-}
+  /* 2 */ }
 
 .clearfix:after {
-  clear: both;
-}
+  clear: both; }
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+  /* Style adjustments for viewports that meet the condition */ }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -452,61 +373,53 @@ footer {
     /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    text-shadow: none !important; }
 
   a,
   a:visited {
-    text-decoration: underline;
-  }
+    text-decoration: underline; }
 
   a[href]:after {
-    content: " (" attr(href) ")";
-  }
+    content: " (" attr(href) ")"; }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+    content: " (" attr(title) ")"; }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
-    content: "";
-  }
+    content: ""; }
 
   pre {
-    white-space: pre-wrap !important;
-  }
+    white-space: pre-wrap !important; }
 
   blockquote,
   pre {
     border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
+
   /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
   thead {
-    display: table-header-group;
-  }
+    display: table-header-group; }
 
   img,
   tr {
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   h2,
   h3,
   p {
     orphans: 3;
-    widows: 3;
-  }
+    widows: 3; }
 
   h2,
   h3 {
-    page-break-after: avoid;
-  }
-}
+    page-break-after: avoid; } }
+
+/*# sourceMappingURL=style.css.map */
