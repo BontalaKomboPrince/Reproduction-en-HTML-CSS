@@ -107,7 +107,7 @@ section {
   section .picture-user {
     display: flex;
     justify-content: center;
-    background-image: url(images/onepage-images/onepager03-background-printscreen.svg);
+    background-image: image("images/onepage-images/onepager03-background-printscreen.svg");
     background-repeat: no-repeat;
     background-size: cover; }
     section .picture-user .printscreen img {
@@ -127,7 +127,8 @@ section {
     font-size: 25px; }
   .sec-2 .Advantages {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    width: 70%; }
     .sec-2 .Advantages p {
       font-style: oblique; }
     .sec-2 .Advantages h3 {
@@ -136,21 +137,42 @@ section {
       font-weight: 100;
       line-height: 30px;
       font-size: 25px; }
-    .sec-2 .Advantages h3.Boutton-bleu {
-      width: 60%;
-      color: white;
-      background-color: #4198ff;
-      border-radius: 5%;
-      padding: 5%;
-      font-size: 1em;
-      justify-content: center; }
-      .sec-2 .Advantages h3.Boutton-bleu .Montly-Plan {
-        display: flex;
-        text-align: center; }
-      .sec-2 .Advantages h3.Boutton-bleu .Self-Hosted {
-        display: flex;
-        text-align: center;
-        border-left: 1px solid; }
+    .sec-2 .Advantages .Montly-Plan {
+      width: 30%;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center; }
+      .sec-2 .Advantages .Montly-Plan .Boutton-bleu {
+        width: 170px;
+        height: 60px;
+        color: white;
+        background-color: #4198ff;
+        text-decoration: none;
+        border-radius: 5%;
+        padding: 2%;
+        font-size: 20px;
+        justify-content: center;
+        display: flex; }
+    .sec-2 .Advantages .Self-Hosted {
+      display: flex;
+      text-align: center;
+      padding-left: 5%;
+      border-left: 2px solid grey;
+      margin-left: 10%;
+      flex-direction: column;
+      align-items: center; }
+      .sec-2 .Advantages .Self-Hosted .Boutton-bleu {
+        width: 140px;
+        height: 60px;
+        color: white;
+        background-color: #4198ff;
+        text-decoration: none;
+        border-radius: 5%;
+        padding: 5%;
+        font-size: 20px;
+        justify-content: center;
+        display: flex; }
 
 .sec-3 {
   display: flex;
@@ -162,14 +184,64 @@ section {
   display: flex;
   justify-content: center;
   text-align: center; }
+  .sec-4 .Get-Started h1 {
+    font-size: 40px;
+    font-weight: 100; }
+  .sec-4 .Get-Started h3 {
+    font-weight: 100;
+    line-height: 30px;
+    margin-top: -20px; }
+  .sec-4 .Email .field_email {
+    width: 320px;
+    height: 15px;
+    font-size: 15px;
+    padding: 1%;
+    border-radius: 5px; }
+  .sec-4 .Free-month .Start {
+    width: 350px;
+    height: 45px;
+    font-size: 15px;
+    padding: 0%;
+    background-color: #4198ff;
+    color: white;
+    margin-top: 1%;
+    border-radius: 5px; }
+  .sec-4 .hr {
+    display: flex;
+    flex-direction: row;
+    margin: 2%; }
+    .sec-4 .hr .hr1 {
+      width: 14%;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: 7.5px;
+      border-width: 1px; }
+    .sec-4 .hr span {
+      align-self: center; }
+    .sec-4 .hr .hr2 {
+      width: 14%;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: 4.5px;
+      margin-right: auto;
+      border-width: 1px; }
   .sec-4 .Google {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center; }
     .sec-4 .Google button {
+      width: 300px;
+      height: 50px;
+      font-size: 15px;
+      padding: 1%;
+      border-radius: 5px;
       width: 300px; }
     .sec-4 .Google .google-icon {
+      align-self: center;
+      border: 1px solid;
+      padding: 0.6%;
       width: 35px; }
       .sec-4 .Google .google-icon img {
         width: 80%; }
@@ -182,9 +254,14 @@ footer.bottom {
   color: white; }
   footer.bottom .table-nav {
     display: flex;
-    justify-content: center; }
-    footer.bottom .table-nav table tr.table-head {
-      color: grey; }
+    justify-content: center;
+    line-height: 1.9;
+    text-align: -webkit-match-parent;
+    padding: 5%; }
+    footer.bottom .table-nav table {
+      text-align: left; }
+      footer.bottom .table-nav table tr.table-head {
+        color: grey; }
   footer.bottom .social-icon {
     display: flex;
     align-self: center;
@@ -211,6 +288,7 @@ footer.bottom {
     footer.bottom .social-icon .fa-twitter {
       color: #3f4655; }
   footer.bottom .Copy-Right {
-    text-align: center; }
+    text-align: center;
+    color: lightgrey; }
 
 /*# sourceMappingURL=style.css.map */

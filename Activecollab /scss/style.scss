@@ -144,7 +144,7 @@ section {
   .picture-user {
     display: flex;
     justify-content: center;
-background-image: url(images/onepage-images/onepager03-background-printscreen.svg);
+    background-image: image('images/onepage-images/onepager03-background-printscreen.svg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -176,6 +176,7 @@ background-image: url(images/onepage-images/onepager03-background-printscreen.sv
   .Advantages {
     display: flex;
     justify-content: center;
+    width: 70%;
 
     p {
       font-style: oblique;
@@ -191,26 +192,49 @@ background-image: url(images/onepage-images/onepager03-background-printscreen.sv
       font-size: 25px;
     }
 
-    h3.Boutton-bleu {
-      width: 60%;
-      color: white;
-      background-color: #4198ff;
-      border-radius: 5%;
-      padding: 5%;
-      font-size: 1em;
-      justify-content: center;
 
       .Montly-Plan {
+        width: 30%;
         display: flex;
         text-align: center;
+        flex-direction: column;
+        align-items: center;
+        .Boutton-bleu {
+          width: 170px;
+          height: 60px;
+          color: white;
+          background-color: #4198ff;
+          text-decoration: none;
+          border-radius: 5%;
+          padding: 2%;
+          font-size: 20px;
+          justify-content: center;
+          display: flex;
+        }
       }
 
       .Self-Hosted {
         display: flex;
         text-align: center;
-        border-left: 1px solid;
-      }
-    }
+        padding-left: 5%;
+        border-left: 2px solid grey;
+        margin-left: 10%;
+        flex-direction: column;
+        align-items: center;
+        .Boutton-bleu {
+          width: 140px;
+          height: 60px;
+          color: white;
+          background-color: #4198ff;
+          text-decoration: none;
+          border-radius: 5%;
+          padding: 5%;
+          font-size: 20px;
+          justify-content: center;
+          display: flex;
+        }
+            }
+
   }
 }
 
@@ -225,6 +249,65 @@ background-image: url(images/onepage-images/onepager03-background-printscreen.sv
   display: flex;
   justify-content: center;
   text-align: center;
+  .Get-Started{
+    h1{
+      font-size: 40px;
+      font-weight: 100;
+    }
+    h3{
+    font-weight: 100;
+    line-height: 30px;
+    margin-top: -20px;
+    }
+  }
+  .Email{
+    .field_email{
+      width: 320px;
+      height: 15px;
+      font-size: 15px;
+      padding: 1%;
+      border-radius: 5px;
+
+    }
+  }
+  .Free-month{
+    .Start{
+      width: 350px;
+    height: 45px;
+    font-size: 15px;
+    padding: 0%;
+    background-color: #4198ff;
+    color: white;
+    margin-top: 1%;
+    border-radius: 5px;
+
+
+    }
+  }
+  .hr{
+    display: flex;
+    flex-direction: row;
+    margin:2%;
+    .hr1{
+      width: 14%;
+     margin-top: 0.5em;
+     margin-bottom: 0.5em;
+     margin-left: auto;
+     margin-right: 7.5px;
+     border-width: 1px;
+    }
+    span{
+      align-self: center;
+    }
+    .hr2{
+      width: 14%;
+     margin-top: 0.5em;
+     margin-bottom: 0.5em;
+     margin-left: 4.5px;
+     margin-right: auto;
+     border-width: 1px;
+    }
+  }
 
   .Google {
     display: flex;
@@ -234,9 +317,17 @@ background-image: url(images/onepage-images/onepager03-background-printscreen.sv
 
     button {
       width: 300px;
+      height: 50px;
+      font-size: 15px;
+      padding: 1%;
+      border-radius: 5px;
+      width: 300px;
     }
 
     .google-icon {
+      align-self: center;
+      border: 1px solid;
+      padding: 0.6%;
       width: 35px;
 
       img {
@@ -256,8 +347,12 @@ footer.bottom {
   .table-nav {
     display: flex;
     justify-content: center;
+    line-height: 1.9;
+    text-align: -webkit-match-parent;
+    padding: 5%;
 
     table {
+      text-align: left;
       tr.table-head {
         color: grey;
       }
@@ -297,5 +392,7 @@ footer.bottom {
 
   .Copy-Right {
     text-align: center;
+    color: lightgrey;
+
   }
 }
